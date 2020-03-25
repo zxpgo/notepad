@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SimSun-ExtB</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="lineWrapMode">
+     <enum>QTextEdit::WidgetWidth</enum>
+    </property>
+    <property name="overwriteMode">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="open_file"/>
+    <addaction name="save_file"/>
+    <addaction name="new_file"/>
+    <addaction name="save_as_file"/>
+    <addaction name="separator"/>
+    <addaction name="page_setup"/>
+    <addaction name="print_dialog"/>
+    <addaction name="separator"/>
+    <addaction name="file_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="revoke_text"/>
+    <addaction name="separator"/>
+    <addaction name="cut_content"/>
+    <addaction name="copy_text"/>
+    <addaction name="paste_text"/>
+    <addaction name="delete_2"/>
+    <addaction name="separator"/>
+    <addaction name="bing_search"/>
+    <addaction name="find_content"/>
+    <addaction name="replace_content"/>
+    <addaction name="separator"/>
+    <addaction name="time"/>
+    <addaction name="select_all"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="find_help"/>
+    <addaction name="about_window"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>格式</string>
+    </property>
+    <addaction name="new_line"/>
+    <addaction name="font_win"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>查看</string>
+    </property>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>缩放</string>
+     </property>
+     <addaction name="enlarge"/>
+     <addaction name="narrow"/>
+    </widget>
+    <addaction name="menu_6"/>
+    <addaction name="status"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="open_file">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="save_file">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="new_file">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="copy_text">
+   <property name="text">
+    <string>复制</string>
+   </property>
+  </action>
+  <action name="paste_text">
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+  </action>
+  <action name="save_as_file">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="file_exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="revoke_text">
+   <property name="text">
+    <string>撤消</string>
+   </property>
+  </action>
+  <action name="find_help">
+   <property name="text">
+    <string>查看帮助</string>
+   </property>
+  </action>
+  <action name="about_window">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="new_line">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>自动换行</string>
+   </property>
+  </action>
+  <action name="font_win">
+   <property name="text">
+    <string>字体...</string>
+   </property>
+  </action>
+  <action name="enlarge">
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="narrow">
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="print_dialog">
+   <property name="text">
+    <string>打印</string>
+   </property>
+  </action>
+  <action name="time">
+   <property name="text">
+    <string>时间/日期</string>
+   </property>
+  </action>
+  <action name="find_content">
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+  <action name="replace_content">
+   <property name="text">
+    <string>替换</string>
+   </property>
+  </action>
+  <action name="select_all">
+   <property name="text">
+    <string>全选</string>
+   </property>
+  </action>
+  <action name="delete_2">
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="cut_content">
+   <property name="text">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="page_setup">
+   <property name="text">
+    <string>页面设置</string>
+   </property>
+  </action>
+  <action name="status">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>状态栏</string>
+   </property>
+  </action>
+  <action name="bing_search">
+   <property name="text">
+    <string>使用 Bing 搜索...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
